@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo 1</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="bingo.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="game-over">
+        <h2>YOU GOT BINGO!</h2>
+        <button id="play-again">Play Again?</button>
+        <button id="play-again-same-card">Play Again (Same Card)?</button>
+      </div>
+      <h1 class="sr-only">BINGO</h1>
+      <article>
+        <section>
+          <div id="game-card"></div>
+        </section>
+        <section class="interface">
+          <div type="text" id="bingo-ball"><span></span></div>
+          <button id="bingo">Bingo!</button>
+        </section>
+      </article>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="bingo-3.js"></script>
+  </body>
+</html>

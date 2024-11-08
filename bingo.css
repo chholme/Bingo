@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+.container {
+  width: 80%;
+  margin: 50px auto 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article {
+  display: flex;
+  flex-flow: row wrap;
+}
+.interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 607px;
+  margin: 3rem 0 0 3rem;
+}
+@media screen and (max-width: 920px) {
+  .interface {
+    height: inherit;
+    margin: 0 0 0 155px;
+  }
+}
+button {
+  background-color: aquamarine;
+  color: seagreen;
+  padding: 1rem 2rem;
+  border: 4px solid seagreen;
+  border-radius: 8px;
+  margin: 0.5rem 0.25rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: steelblue;
+  border: 4px solid white;
+  color: white;
+}
+#bingo-ball {
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 1px solid steelblue;
+  box-shadow: inset -4px -8px 3px 2px steelblue, inset 1px 1px 1px 1px steelblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+#game-card {
+  margin: 0 0 3rem;
+}
+table {
+  box-shadow: 2px 2px 4px steelblue;
+  font-size: 24px;
+  background-color: aliceblue;
+  border-collapse: collapse;
+  width: 500px;
+  color: navy;
+}
+th {
+  width: 20%;
+  height: 80px;
+  font-size: larger;
+  color: seagreen;
+}
+th,
+td {
+  border: 6px solid aliceblue;
+  padding: 10px;
+  text-align: center;
+}
+td {
+  background-color: white;
+  padding: 2rem 0;
+}
+td:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+.free {
+  background-color: aquamarine;
+}
+.stamped {
+  background-color: aquamarine;
+}
+#bingo {
+  font-size: 36px;
+  margin-top: 2rem;
+}
+#game-over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(70, 131, 180, 0.867);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#game-over h2 {
+  font-size: 60px;
+  color: white;
+}
